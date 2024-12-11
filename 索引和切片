@@ -1,0 +1,9 @@
+import numpy as np
+
+# 一维数组索引
+arr=np.arange(10)
+print(arr,'\n')
+print(arr[2],'\n')
+print(arr[-1],'\n')
+print(arr[1:4])
+
