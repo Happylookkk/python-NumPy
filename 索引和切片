@@ -1,9 +1,22 @@
 import numpy as np
 
 # 一维数组索引
+##
 arr=np.arange(10)
 print(arr,'\n')
 print(arr[2],'\n')
 print(arr[-1],'\n')
 print(arr[1:4])
+## 数组元素的复制
+arr1=arr[-4:-1].copy()
+print(arr1)
 
+# 多维数组的索引
+##
+arr=np.arange(12).reshape(3,4)
+print(arr,'\n')
+print(arr[0,1:3],'\n')  # 第0行中第1列到第2列
+print(arr[:,2],'\n')  # 第2列
+print(arr[:1,:1])  # 第0行第0列
+## 使用整数函数和布尔值访问多维数组
+### 从两个序列的对应位置取出两个整数来组成下标：arr[0,1]，arr[1,3]
